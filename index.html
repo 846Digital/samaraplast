@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#263e35">
+  <title>Самара-Пласт — всё для жизни дома</title>
+  <meta name="description" content="Самара-Пласт Кэш-Кэрри — товары для дома, посуда, хранение, текстиль, сад и бытовые мелочи. Оптом и в розницу с 2007 года. Самара, Луцкая, 16.">
+  <meta property="og:title" content="Самара-Пласт — всё для жизни дома">
+  <meta property="og:description" content="Полезные вещи для дома и бизнеса. Полный каталог Самара-Пласт в новом дизайне.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://www.samaraplast.ru">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="vendor.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-up-right" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6"/><rect x="15" y="3" width="6" height="6"/><rect x="3" y="15" width="6" height="6"/><rect x="15" y="15" width="6" height="6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m8 4 8 8-8 8"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M1 4h13v13H1zM14 8h4l4 5v4h-8"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="18" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="m5 3 4 1 1 5-3 2c2 3 3 4 6 6l2-3 5 1 1 4c-1 5-9 1-13-3S0 4 5 3Z"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16M8 3v6m8 0v6m-6 0v6"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/></symbol>
+  </defs></svg>
+  <header class="world-header">
+    <a class="world-brand" href="#/" aria-label="Самара-Пласт — на главную"><img src="assets/logo.svg" alt="Самара-Пласт" width="174" height="53"></a>
+    <nav class="world-navigation" aria-label="Основная навигация"><button id="catalog-toggle" aria-controls="catalog-dialog" aria-expanded="false">Каталог <svg class="icon"><use href="#i-grid"/></svg></button><a href="#/about">О магазине</a><a href="#/client-individual">Как купить</a><a href="#/contacts">Контакты</a></nav>
+    <div class="search-wrap world-search"><form id="search-form" role="search" autocomplete="off"><label class="sr-only" for="site-search">Поиск по названию или коду товара</label><input id="site-search" type="search" role="combobox" aria-autocomplete="list" aria-haspopup="listbox" placeholder="Найти нужную вещь" aria-controls="search-results" aria-expanded="false"><button type="submit" aria-label="Найти товары"><svg class="icon"><use href="#i-search"/></svg></button></form><div id="search-results" class="search-results" role="listbox" aria-label="Подсказки поиска" hidden></div></div>
+    <div class="world-actions"><a class="favorites-link" href="#/favorites" aria-label="Избранное"><svg class="icon"><use href="#i-heart"/></svg><span class="count" id="favorite-count" hidden>0</span></a><button data-open-cart aria-label="Открыть корзину"><svg class="icon"><use href="#i-bag"/></svg><span class="count" id="cart-count">0</span></button></div>
+  </header>
+  <main id="main" tabindex="-1">
+    <div id="home-view" class="house-page">
+      <div class="house-workspace">
+        <aside class="house-directory"><p class="atlas-eyebrow">САМАРА-ПЛАСТ · ДОМ ПОЛЕЗНЫХ ВЕЩЕЙ</p><h1 class="atlas-title">Всё начинается<br>с простых<br><span>вещей.</span></h1><p class="atlas-intro">Чашка для долгого завтрака.<br>Место для любимых мелочей.<br>Выберите, чем займёмся дома.</p><nav id="room-directory" class="room-directory" aria-label="Выбор комнаты"></nav><a class="atlas-all" href="#/catalog"><span>Все <strong id="atlas-total">4 725</strong> товаров</span><svg class="icon"><use href="#i-up-right"/></svg></a></aside>
+        <section class="house-exploration" aria-label="Интерактивный дом и товары для выбранной комнаты"><div class="house-stage" id="house-stage" data-scene="loading"><img class="house-fallback" src="assets/house-plan.svg" alt="Иллюстративный план дома: кухня, ванная, текстиль, хранение, уборка и сад" width="1100" height="800"><div class="house-scene-note"><span class="scene-indicator"></span><span id="scene-hint">Выберите комнату на плане или слева</span></div><button class="house-overview" id="house-overview" aria-label="Показать дом целиком"><svg class="icon"><use href="#i-grid"/></svg></button></div><div class="room-dock"><div class="room-dock-top"><div class="room-dock-title"><p id="room-kicker">ДЛЯ ВКУСНЫХ МОМЕНТОВ</p><h2 id="room-heading">Кухня и столовая</h2></div><a id="room-open" class="room-open" href="#/catalog/posuda"><span>В раздел</span><svg class="icon"><use href="#i-up-right"/></svg></a></div><div id="room-finds" class="room-finds" aria-busy="true"></div><div class="room-dock-bottom"><p id="room-selection-count" role="status" aria-live="polite"></p><div class="room-collections" aria-label="Подборки товаров"><button data-home-set="room" aria-pressed="true">В комнате</button><button data-home-set="new" aria-pressed="false">Новинки</button><button data-home-set="season" aria-pressed="false">По сезону</button></div></div></div></section>
+      </div>
+      <div class="house-bottom"><span>САМАРА, ЛУЦКАЯ, 16</span><span>ОПТОМ И В РОЗНИЦУ · С 2007 ГОДА</span><a href="#/catalog?set=sale">Скидки до <strong>13%</strong> <svg class="icon"><use href="#i-up-right"/></svg></a></div>
+    </div>
+  </main>
+  <footer class="store-footer"><div class="store-footer-inner"><div><a class="store-footer-name" href="#/">Самара-Пласт</a><span>Магазин полезных вещей для дома и бизнеса.</span></div><div class="store-footer-contact"><a href="tel:+78463361605">+7 (846) 336-16-05</a><a href="tel:+78469977614">+7 (846) 997-76-14</a><a href="mailto:insale@sam-plast.ru">insale@sam-plast.ru</a></div><nav aria-label="Информация о магазине"><a href="#/about">О компании</a><a href="#/client-individual">Частным покупателям</a><a href="#/client-entity">Для бизнеса</a><a href="#/contacts">Контакты</a></nav><div class="store-footer-hours"><span>Самара, улица Луцкая, 16</span><span>Пн–сб: 10:00–18:00 · Вс: 10:00–17:00</span><span>Без перерывов. Доставка и обработка интернет заказов производится в будние дни с 10 до 18ч.</span><span>Год основания: 2007 · Торговая площадь: 1000 м²</span></div></div><div class="store-footer-meta"><span>© <span id="year">2026</span> ООО «Самара-Пласт Кэш-Кэрри»</span><div><a href="https://vk.com/samaraplastru" target="_blank" rel="noopener">ВКонтакте ↗</a><a href="https://t.me/samaraplast" target="_blank" rel="noopener">Telegram ↗</a><a href="https://ok.ru/profile/910010225397" target="_blank" rel="noopener">Одноклассники ↗</a><a href="https://max.ru/join/mfwzMUpwVXv4aFC4bkW1rfoEsnX7lQepyubceAzrbv0" target="_blank" rel="noopener">MAX ↗</a></div><div><a href="https://www.samaraplast.ru/files/docs/privacy_policy_samaraplast_ru.docx">Конфиденциальность</a><a href="https://www.samaraplast.ru/files/docs/public_offer_samaraplast_ru.docx">Оферта</a><a href="https://www.samaraplast.ru/files/docs/samara-plast-details.pdf">Реквизиты</a></div></div></footer>
+  <dialog id="catalog-dialog" class="catalog-dialog" aria-labelledby="catalog-dialog-title"><div class="dialog-head"><h2 id="catalog-dialog-title">Всё для дома</h2><button class="icon-button" data-close-dialog aria-label="Закрыть каталог"><svg class="icon"><use href="#i-close"/></svg></button></div><div id="catalog-menu" class="catalog-menu"><p class="loading">Загружаем разделы…</p></div></dialog>
+  <dialog id="cart-dialog" class="cart-dialog" aria-labelledby="cart-title"><div class="dialog-head"><h2 id="cart-title">Ваша корзина <span id="cart-heading-count"></span></h2><button class="icon-button" data-close-dialog aria-label="Закрыть корзину"><svg class="icon"><use href="#i-close"/></svg></button></div><div id="cart-body"></div></dialog>
+  <div id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+  <div id="toast" class="toast" hidden></div>
+  <noscript><div class="noscript">Для поиска и просмотра каталога включите JavaScript. Телефон магазина: <a href="tel:+78463361605">+7 (846) 336-16-05</a>.</div></noscript>
+</body>
+</html>
